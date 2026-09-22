@@ -1,6 +1,6 @@
-# Spendly — Personal Expense Tracker
+# Spendsphere — Personal Expense Tracker
 
-Spendly is a lightweight Flask web app for logging expenses, understanding
+Spendsphere is a lightweight Flask web app for logging expenses, understanding
 spending patterns, and keeping track of where your money goes. It's built as
 a guided, step-by-step learning project — the routing, templates, and styling
 are in place, and core functionality (database, auth, and expense CRUD) is
@@ -16,12 +16,12 @@ implemented incrementally as numbered steps.
 
 ## Tech Stack
 
-| Layer     | Technology              |
-|-----------|--------------------------|
-| Backend   | Python 3, [Flask](https://flask.palletsprojects.com/) 3.1 |
-| Database  | SQLite                   |
-| Frontend  | Jinja2 templates, vanilla CSS/JS |
-| Testing   | pytest, pytest-flask     |
+| Layer    | Technology                                                |
+| -------- | --------------------------------------------------------- |
+| Backend  | Python 3, [Flask](https://flask.palletsprojects.com/) 3.1 |
+| Database | SQLite                                                    |
+| Frontend | Jinja2 templates, vanilla CSS/JS                          |
+| Testing  | pytest, pytest-flask                                      |
 
 ## Project Structure
 
@@ -88,16 +88,16 @@ pytest
 
 ## Routes
 
-| Route                        | Method | Status                        |
-|-------------------------------|--------|--------------------------------|
-| `/`                            | GET    | Landing page                   |
-| `/register`                    | GET    | Registration page              |
-| `/login`                       | GET    | Login page                     |
-| `/logout`                      | GET    | Placeholder — Step 3           |
-| `/profile`                     | GET    | Placeholder — Step 4           |
-| `/expenses/add`                | GET    | Placeholder — Step 7           |
-| `/expenses/<id>/edit`          | GET    | Placeholder — Step 8           |
-| `/expenses/<id>/delete`        | GET    | Placeholder — Step 9           |
+| Route                   | Method | Status               |
+| ----------------------- | ------ | -------------------- |
+| `/`                     | GET    | Landing page         |
+| `/register`             | GET    | Registration page    |
+| `/login`                | GET    | Login page           |
+| `/logout`               | GET    | Placeholder — Step 3 |
+| `/profile`              | GET    | Placeholder — Step 4 |
+| `/expenses/add`         | GET    | Placeholder — Step 7 |
+| `/expenses/<id>/edit`   | GET    | Placeholder — Step 8 |
+| `/expenses/<id>/delete` | GET    | Placeholder — Step 9 |
 
 ## Roadmap
 
