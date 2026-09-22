@@ -1,0 +1,208 @@
+/* ------------------------------------------------------------------ */
+/* Landing hero (matches spendsphere-hero.webp)                        */
+/* ------------------------------------------------------------------ */
+
+.lp-hero {
+    padding: 4.5rem 2rem 4rem;
+}
+
+.lp-hero-inner {
+    max-width: 620px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.lp-hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #e5f6ea;
+    color: var(--ink-soft);
+    font-size: 0.85rem;
+    font-weight: 500;
+    padding: 0.4rem 0.9rem;
+    border-radius: 999px;
+    margin-bottom: 1.75rem;
+}
+
+.lp-hero-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #22c55e;
+    flex-shrink: 0;
+}
+
+.lp-hero-title {
+    font-family: var(--font-body);
+    font-weight: 800;
+    font-size: clamp(2rem, 4.2vw, 2.75rem);
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    margin-bottom: 1.25rem;
+}
+
+.lp-hero-accent {
+    color: #16a34a;
+}
+
+.lp-hero-subtitle {
+    font-size: 1.05rem;
+    color: var(--ink-muted);
+    line-height: 1.7;
+    max-width: 460px;
+    margin-bottom: 2rem;
+}
+
+.lp-hero-actions {
+    display: flex;
+    gap: 0.85rem;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.lp-btn-primary,
+.lp-btn-secondary {
+    display: inline-block;
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--radius-sm);
+    transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.lp-btn-primary {
+    background: var(--ink);
+    color: var(--paper);
+    border: 1px solid var(--ink);
+}
+
+.lp-btn-primary:hover {
+    background: var(--ink-soft);
+}
+
+.lp-btn-secondary {
+    background: transparent;
+    color: var(--ink);
+    border: 1px solid var(--border);
+}
+
+.lp-btn-secondary:hover {
+    border-color: var(--ink);
+}
+
+/* ------------------------------------------------------------------ */
+/* Hero card                                                           */
+/* ------------------------------------------------------------------ */
+
+.lp-hero-card {
+    width: 100%;
+    max-width: 560px;
+    background: var(--paper-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 1.75rem 2rem;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.06);
+    text-align: left;
+}
+
+.lp-card-dots {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 1.5rem;
+}
+
+.lp-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+}
+
+.lp-dot-red { background: #ff5f57; }
+.lp-dot-yellow { background: #febc2e; }
+.lp-dot-green { background: #28c840; }
+
+.lp-card-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-soft);
+}
+
+.lp-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.lp-stat-label {
+    font-size: 0.8rem;
+    color: var(--ink-faint);
+}
+
+.lp-stat-value {
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: var(--ink);
+}
+
+.lp-stat-delta {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.lp-stat-delta-down { color: #dc2626; }
+.lp-stat-delta-up { color: #16a34a; }
+.lp-stat-delta-muted { color: var(--ink-faint); }
+
+.lp-card-bars {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+}
+
+.lp-bar-row {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    align-items: center;
+    gap: 1rem;
+}
+
+.lp-bar-cat {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--ink-soft);
+}
+
+.lp-bar-track {
+    height: 9px;
+    background: var(--border-soft);
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.lp-bar {
+    height: 100%;
+    border-radius: 999px;
+}
+
+.lp-bar-orange { background: #f59e0b; }
+.lp-bar-blue { background: #3b82f6; }
+.lp-bar-purple { background: #8b5cf6; }
+
+/* ------------------------------------------------------------------ */
+/* Responsive                                                          */
+/* ------------------------------------------------------------------ */
+
+@media (max-width: 640px) {
+    .lp-hero { padding: 3rem 1rem 2.5rem; }
+    .lp-hero-actions { flex-wrap: wrap; justify-content: center; }
+    .lp-card-stats { grid-template-columns: 1fr; gap: 1.25rem; }
+}
